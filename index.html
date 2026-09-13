@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+
+  <meta
+    name="description"
+    content="AASHISH SANDWICH™ - Fresh Bite, Great Taste. Digital QR Menu, WhatsApp Ordering and Online Billing."
+  >
+
+  <title>AASHISH SANDWICH™ | Fresh Bite, Great Taste</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-strip">
+    <span>🔥 Fresh • Tasty • Affordable</span>
+    <a href="tel:+919074755317">📞 90747 55317</a>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <a href="#home" class="brand">
+      <span class="brand-main">AASHISH</span>
+      <span class="brand-sub">SANDWICH™</span>
+      <small>Fresh Bite, Great Taste</small>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#offers">Offers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="icon-btn cart-open">
+      🛒 <span class="cart-count">0</span>
+    </button>
+
+  </header>
+
+
+  <!-- MAIN -->
+  <main id="home">
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          AASHISH SANDWICH™
+        </div>
+
+        <h1>
+          Fresh Bite.<br>
+          <span>Great Taste.</span>
+        </h1>
+
+        <p>
+          Delicious sandwiches, chilled cold coffee and satisfying combos —
+          freshly made for you.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="#menu" class="btn btn-primary">
+            Explore Menu →
+          </a>
+
+          <button class="btn btn-dark cart-open">
+            View Cart 🛒
+          </button>
+
+        </div>
+
+        <div class="hero-points">
+          <span>✓ Freshly Made</span>
+          <span>✓ Fast Service</span>
+          <span>✓ WhatsApp Order</span>
+        </div>
+
+      </div>
+
+
+      <div class="hero-food">
+
+        <div class="offer-badge">
+          BEST<br>SELLER
+        </div>
+
+        <div class="food-orb">
+
+          <img
+            src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85"
+            alt="Fresh sandwich"
+          >
+
+        </div>
+
+        <div class="price-chip">
+
+          <small>Starting from</small>
+
+          <strong>₹89</strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- QUICK INFO -->
+    <section class="quick-bar">
+
+      <div>
+        <strong>📍</strong>
+        <span>Chhatarpur, Madhya Pradesh</span>
+      </div>
+
+      <div>
+        <strong>🕐</strong>
+        <span>Open Daily</span>
+      </div>
+
+      <div>
+        <strong>💬</strong>
+        <span>WhatsApp Orders</span>
+      </div>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section class="section" id="menu">
+
+      <div class="section-head">
+
+        <div>
+          <div class="eyebrow">
+            OUR MENU
+          </div>
+
+          <h2>
+            Choose your favourite
+          </h2>
+        </div>
+
+        <button class="view-cart-btn cart-open">
+          Cart <span class="cart-count">0</span>
+        </button>
+
+      </div>
+
+
+      <!-- SEARCH -->
+      <div class="search-box">
+
+        <span>⌕</span>
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search sandwiches, coffee, combos..."
+          autocomplete="off"
+        >
+
+        <button id="clearSearch">
+          ×
+        </button>
+
+      </div>
+
+
+      <!-- CATEGORIES -->
+      <div class="categories" id="categories">
+
+        <button class="category active" data-category="all">
+          All
+        </button>
+
+        <button class="category" data-category="sandwich">
+          Sandwiches
+        </button>
+
+        <button class="category" data-category="drinks">
+          Drinks
+        </button>
+
+        <button class="category" data-category="combos">
+          Combos
+        </button>
+
+        <button class="category" data-category="addons">
+          Add-ons
+        </button>
+
+      </div>
+
+
+      <!-- MENU ITEMS -->
+      <div class="menu-grid" id="menuGrid"></div>
+
+
+      <!-- EMPTY -->
+      <div class="empty-state" id="emptyState">
+
+        <div>🔎</div>
+
+        <h3>
+          No item found
+        </h3>
+
+        <p>
+          Try another food name or category.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- OFFER -->
+    <section class="promo" id="offers">
+
+      <div>
+
+        <span class="eyebrow">
+          SPECIAL OFFER
+        </span>
+
+        <h2>
+          Hungry? Make it a combo.
+        </h2>
+
+        <p>
+          Pair your favourite sandwich with a chilled drink
+          and enjoy a better value.
+        </p>
+
+      </div>
+
+      <a href="#menu" class="btn btn-primary">
+        Order Now →
+      </a>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features section">
+
+      <div class="section-head centered">
+
+        <div>
+
+          <div class="eyebrow">
+            WHY AASHISH SANDWICH
+          </div>
+
+          <h2>
+            Simple. Fresh. Delicious.
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature-grid">
+
+        <article>
+
+          <span>🥪</span>
+
+          <h3>
+            Freshly Made
+          </h3>
+
+          <p>
+            Prepared fresh for a better bite and better taste.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <span>⚡</span>
+
+          <h3>
+            Quick Ordering
+          </h3>
+
+          <p>
+            Scan QR, select items and place your order in seconds.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <span>💬</span>
+
+          <h3>
+            WhatsApp Ready
+          </h3>
+
+          <p>
+            Complete order details can be sent directly to WhatsApp.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- QR -->
+    <section class="qr-section">
+
+      <div class="qr-copy">
+
+        <div class="eyebrow">
+          DIGITAL QR MENU
+        </div>
+
+        <h2>
+          Scan. Order. Enjoy.
+        </h2>
+
+        <p>
+          Keep this QR at your table, counter or packaging.
+          Customers can open the menu instantly.
+        </p>
+
+        <button class="btn btn-primary" id="openQr">
+          Show QR Code
+        </button>
+
+      </div>
+
+
+      <div class="qr-card">
+
+        <div id="qrPreview"></div>
+
+        <strong>
+          Scan to Order
+        </strong>
+
+        <small>
+          Aashish Sandwich™
+        </small>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div>
+
+        <div class="eyebrow">
+          CONTACT
+        </div>
+
+        <h2>
+          Order your favourite bite.
+        </h2>
+
+        <p>
+          For delivery, bulk orders or quick enquiries,
+          connect with us on WhatsApp.
+        </p>
+
+      </div>
+
+      <a
+        class="whatsapp-big"
+        href="https://wa.me/919074755317"
+        target="_blank"
+        rel="noopener"
+      >
+        💬 WhatsApp Us
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-brand">
+
+      <strong>
+        AASHISH <span>SANDWICH™</span>
+      </strong>
+
+      <p>
+        Fresh Bite, Great Taste
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="#menu">
+        Menu
+      </a>
+
+      <a href="#offers">
+        Offers
+      </a>
+
+      <a
+        href="https://instagram.com/aashish.sandwich"
+        target="_blank"
+        rel="noopener"
+      >
+        @aashish.sandwich
+      </a>
+
+    </div>
+
+
+    <div class="footer-bottom">
+      © 2026 Aashish Sandwich™ • Digital Menu
+    </div>
+
+  </footer>
+
+
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+
+  <!-- CART -->
+  <aside
+    class="cart-drawer"
+    id="cartDrawer"
+    aria-hidden="true"
+  >
+
+    <div class="drawer-head">
+
+      <div>
+
+        <span class="eyebrow">
+          YOUR ORDER
+        </span>
+
+        <h2>
+          Cart
+        </h2>
+
+      </div>
+
+      <button class="close-btn" id="closeCart">
+        ×
+      </button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems"></div>
+
+
+    <div class="cart-empty" id="cartEmpty">
+
+      <div>🛒</div>
+
+      <h3>
+        Your cart is empty
+      </h3>
+
+      <p>
+        Add something delicious from the menu.
+      </p>
+
+      <button class="btn btn-primary cart-close">
+        Explore Menu
+      </button>
+
+    </div>
+
+
+    <div class="cart-summary" id="cartSummary">
+
+      <div>
+        <span>Subtotal</span>
+        <strong id="subtotal">₹0</strong>
+      </div>
+
+      <div>
+        <span>Tax / Charges</span>
+        <strong id="tax">₹0</strong>
+      </div>
+
+      <div class="total">
+        <span>Total</span>
+        <strong id="grandTotal">₹0</strong>
+      </div>
+
+      <button class="checkout-btn" id="checkoutBtn">
+        Proceed to Checkout →
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-wrap" id="checkoutModal">
+
+    <div class="modal">
+
+      <button class="close-btn modal-close">
+        ×
+      </button>
+
+      <div class="eyebrow">
+        CHECKOUT
+      </div>
+
+      <h2>
+        Complete your order
+      </h2>
+
+
+      <form id="checkoutForm">
+
+        <div class="field-row">
+
+          <label>
+            Name
+
+            <input
+              id="customerName"
+              required
+              placeholder="Your name"
+            >
+
+          </label>
+
+
+          <label>
+            Mobile
+
+            <input
+              id="customerMobile"
+              required
+              inputmode="numeric"
+              maxlength="10"
+              pattern="[0-9]{10}"
+              placeholder="10 digit mobile"
+            >
+
+          </label>
+
+        </div>
+
+
+        <div class="field-row">
+
+          <label>
+            Table No.
+
+            <input
+              id="tableNo"
+              placeholder="e.g. 12"
+            >
+
+          </label>
+
+
+          <label>
+            Order Type
+
+            <select id="orderType">
+
+              <option>
+                Dine In
+              </option>
+
+              <option>
+                Takeaway
+              </option>
+
+              <option>
+                Delivery
+              </option>
+
+            </select>
+
+          </label>
+
+        </div>
+
+
+        <label class="full-field">
+
+          Address / Note
+
+          <textarea
+            id="customerNote"
+            rows="3"
+            placeholder="Table number, delivery address or special instruction"
+          ></textarea>
+
+        </label>
+
+
+        <div class="payment-options">
+
+          <p>
+            Payment Method
+          </p>
+
+          <label>
+            <input
+              type="radio"
+              name="payment"
+              value="Cash"
+              checked
+            >
+            Cash
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="payment"
+              value="UPI"
+            >
+            UPI / Online
+          </label>
+
+        </div>
+
+
+        <div class="checkout-total">
+
+          <span>
+            Payable Amount
+          </span>
+
+          <strong id="checkoutTotal">
+            ₹0
+          </strong>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="checkout-btn"
+        >
+          Place Order on WhatsApp 💬
+        </button>
+
+
+        <button
+          type="button"
+          class="demo-payment"
+          id="demoPayment"
+        >
+          Demo Online Payment
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <!-- QR MODAL -->
+  <div class="modal-wrap" id="qrModal">
+
+    <div class="modal qr-modal">
+
+      <button class="close-btn qr-close">
+        ×
+      </button>
+
+      <div class="eyebrow">
+        AASHISH SANDWICH™
+      </div>
+
+      <h2>
+        Scan to Open Menu
+      </h2>
+
+      <div id="qrLarge"></div>
+
+      <p>
+        Point your phone camera at the QR code.
+      </p>
+
+      <div class="qr-actions">
+
+        <button
+          class="btn btn-primary"
+          id="downloadQr"
+        >
+          Download QR
+        </button>
+
+        <button
+          class="btn btn-light qr-close"
+        >
+          Close
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+
+  <!-- MOBILE NAV -->
+  <nav class="mobile-bottom">
+
+    <a href="#home">
+      ⌂
+      <span>Home</span>
+    </a>
+
+    <a href="#menu">
+      ☰
+      <span>Menu</span>
+    </a>
+
+    <button class="cart-open">
+      🛒
+      <b class="cart-count">0</b>
+      <span>Cart</span>
+    </button>
+
+    <a href="#contact">
+      💬
+      <span>Contact</span>
+    </a>
+
+  </nav>
+
+
+  <!-- QR LIBRARY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <!-- MAIN JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
