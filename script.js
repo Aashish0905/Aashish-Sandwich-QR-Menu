@@ -12,7 +12,7 @@ const MENU_URL =
   window.location.href.split("#")[0];
 
 const WHATSAPP_NUMBER =
-  "919074755317";
+  "918349799130";
 
 /*
    Demo charge.
